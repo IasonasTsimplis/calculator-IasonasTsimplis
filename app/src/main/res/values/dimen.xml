@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Settings various dimensions -->
+<resources>
+    <dimen name="app_padding_standard">10dp</dimen>
+
+    <!-- Button corners -->
+    <dimen name="rect_btn_rounder">8dip</dimen>
+
+    <!-- Grid cells -->
+    <dimen name="grid_cell_margin">4dp</dimen>
+
+    <!-- Text view text sizes -->
+    <dimen name="textview_input_text_size">25sp</dimen>
+    <dimen name="textview_result_text_size">40sp</dimen>
+
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Styles used to reduce redundancy as much as possible-->
+<resources>
+
+    <!-- Style for the TextView that displays the user inputs -->
+    <style name="calcInputTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_input_text_size</item>
+        <item name="android:background">@drawable/textview_input_background</item>
+    </style>
+
+    <!-- Style for the TextView that displays the user inputs, for landscape -->
+    <style name="calcInputTextView.landscape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- Style for the TextView that displays the results -->
+    <style name="calcResultTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">50dp</item>
+        <item name="android:textAlignment">textEnd</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textview_result_text_size</item>
+    </style>
+
+    <!-- Style for the TextView that displays the results, for landscape -->
+    <style name="calcResultTextView.landscape">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <!-- Style for the GridLayout -->
+    <style name="calcGridLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:columnCount">4</item>
+        <item name="android:rowCount">5</item>
+    </style>
+
+    <!-- Parent style for calculator buttons -->
+    <style name="calcButton">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">@dimen/grid_cell_margin</item>
+        <item name="android:background">@drawable/btn_basic_background</item>
+    </style>
+
+    <!-- Child style for calculator buttons in Portrait mode, that are numbers (inherits calcButton) -->
+    <style name="calcButton.number">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:onClick">handleNumberButtonClick</item>
+
+    </style>
+
+    <!-- Child style for calculator buttons in Portrait mode, that are operators (inherits calcButton) -->
+    <style name="calcButton.operator">
+        <item name="android:textColor">@color/green</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:onClick">handleOperatorButtonClick</item>
+
+    </style>
+
+    <!-- Child style for calculator buttons in Portrait mode, that are actions (inherits calcButton) -->
+    <style name="calcButton.action">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:onClick">handleActionButtonClick</item>
+    </style>
+
+</resources>

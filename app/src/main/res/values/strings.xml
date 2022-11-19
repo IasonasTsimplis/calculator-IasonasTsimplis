@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- All strings used for the buttons text -->
+<resources>
+    <string name="app_name">Mr. Calculator</string>
+    <string name="text_num0">0</string>
+    <string name="text_num1">1</string>
+    <string name="text_num2">2</string>
+    <string name="text_num3">3</string>
+    <string name="text_num4">4</string>
+    <string name="text_num5">5</string>
+    <string name="text_num6">6</string>
+    <string name="text_num7">7</string>
+    <string name="text_num8">8</string>
+    <string name="text_num9">9</string>
+    <string name="text_addition">+</string>
+    <string name="text_subtraction">−</string>
+    <string name="text_multiplication">×</string>
+    <string name="text_division">÷</string>
+    <string name="text_equals">=</string>
+    <string name="text_clear">AC</string>
+    <string name="text_backspace">⌫</string>
+    <string name="text_sign">-</string>
+    <string name="text_decimal">,</string>
+</resources>
